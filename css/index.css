@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: 'Josefin Sans', cursive;
     background-color: #f0f0f0; /* หรือสีอื่นที่ต้องการ */
 }
 
@@ -129,7 +129,10 @@ nav .logo em {
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
-
+#video-container .video-content .inner em {
+    font-style: normal;
+    font-weight: 200;
+}
 #video-container .video-content .inner p {
     font-size: 22px;
     font-weight: 200;

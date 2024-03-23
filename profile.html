@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">Profile<em>page</em></a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+        </div>
+    </nav>
+    <div class="menu-content" id="menuContent">
+        <table>
+            <tr>
+                <td><a href="index.html">Homepage</a></td>
+            </tr>
+            <tr>
+                <td><a href="game.html">Game</a></td>
+            </tr>
+            <tr>
+                <td><a href="profile.html">About Us</a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="profile-container">
+        <div class="profile-overlay"></div>
+        <div class="profile-content">
+            <div class="profile-image">
+                <img src="imageorvideo/thaniprofile.jpg" alt="Profile Image">
+            </div>
+            <div class="profile-details">
+                <div class="profile-heading">
+                    <h1>My Profile</h1>
+                </div>
+                <div class="profile-info">
+                    <p><strong>Name:</strong> Thani Paknam</p>
+                    <p><strong>Age:</strong> 21</p>
+                    <p><strong>Email:</strong> Thanipaknam@gmail.com</p>
+                    <p><strong>Education:</strong> KMITL</p>
+                    <p><strong>Location:</strong> Chonburi Sattahip</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://github.com/tnpn2545">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Create By Thani Paknam</p>
+    </footer>
+    <script src="script/menu.js"></script>
+</body>
+</html>
