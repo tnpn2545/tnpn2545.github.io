@@ -10,9 +10,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: 'Josefin Sans', cursive;
-    background-color: #0c4a09; /* หรือสีอื่นที่ต้องการ */
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #4237ba;
 }
 
 nav {
@@ -22,7 +23,7 @@ nav {
     width: 100%;
     left: 0;
     top: 0;
-    z-index: 300;
+    z-index: 1001;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
@@ -77,100 +78,11 @@ nav .logo em {
 
 .menu-icon span::before { top: -8px; }
 .menu-icon span::after { bottom: -8px; }
-#game-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
 
-#game-container .game-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: var(--overlay-color);
-    z-index: 2;
-}
-
-#game-container .game-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 1;
-}
-
-#game-container .game-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-}
-
-#game-container .game-content .inner {
-    text-align: center;
-    color: var(--text-color);
-}
-
-#game-container .game-content .inner h1 {
-    font-size: 64px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-#game-container .game-content .inner em {
-    font-style: normal;
-    font-weight: 200;
-}
-#game-container .game-content .inner p {
-    font-size: 22px;
-    font-weight: 200;
-    letter-spacing: 1.5px;
-    margin-bottom: 10px;
-}
-@media (max-width: 768px) {
-    nav .logo a {
-        font-size: 24px;
-    }
-}
-footer {
-    width: 100%;
-    height: 80px;
-    background-color: #313131;
-  }
-  
-  footer p {
-    text-align: center;
-    color: #fff;
-    font-weight: 200;
-    font-size: 13px;
-    text-transform: uppercase;
-    padding-top: 33px;
-    letter-spacing: 0.5px;
-  }
-  
-  footer a {
-    color: #aaa;
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    text-decoration: none;
-    color: #aaa;
-  }
-  .menu-content {
+.menu-content {
     position: absolute;
     right: 0;
-    top: 80px; /* ปรับตามความสูงของ nav ของคุณ */
+    top: 80px;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -179,19 +91,162 @@ footer {
     z-index: 1000;
 }
 
-.menu-content ul {
-    list-style-type: none;
-    padding: 0;
+.menu-content.open {
+    display: block;
 }
 
-.menu-content ul li a {
-    display: block;
-    padding: 10px;
+.menu-content table {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-content td {
+    padding: 0px;
+}
+
+.menu-content td a {
     text-decoration: none;
     color: black;
+    display: block;
+    font-size: medium;
+    padding: 10px;
     border-bottom: 1px solid #eee;
 }
 
-.menu-content ul li a:hover {
+.menu-content td a:hover {
     background-color: #f0f0f0;
+}
+
+#profile-container {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+}
+
+.profile-overlay {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-color);
+    z-index: 2;
+}
+
+.profile-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    z-index: 3;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    align-content: center;
+    overflow-y: auto; 
+}
+
+
+.profile-heading h1 {
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    margin-top: 20px;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #313131;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-top: 33px;
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #aaa;
+}
+@media screen and (max-width: 480px) {
+    .profile-content {
+        flex-direction: column; /* เปลี่ยนเรียงลงให้เป็นแนวตั้งและเอารูปไว้ด้านบน */
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 225px;
+        order: -1; /* ให้รูปอยู่ด้านบน */
+    }
+
+    .social-media {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-media img {
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+    }
 }
