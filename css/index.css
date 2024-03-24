@@ -2,7 +2,7 @@
     --main-bg-color: rgba(250, 250, 250, 0.2);
     --text-color: #fff;
     --overlay-color: rgba(0, 0, 0, 0.5);
-    --font-family: 'Kanit', sans-serif;
+    --font-family: 'Josefin Sans', sans-serif;
 }
 
 * {
@@ -12,8 +12,8 @@
 }
 
 body {
-    font-family: 'Josefin Sans', cursive;
-    background-color: #f0f0f0; /* หรือสีอื่นที่ต้องการ */
+    font-family: var(--font-family);
+    background-color: #f0f0f0;
 }
 
 nav {
@@ -129,10 +129,12 @@ nav .logo em {
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
+
 #video-container .video-content .inner em {
     font-style: normal;
     font-weight: 200;
 }
+
 #video-container .video-content .inner p {
     font-size: 22px;
     font-weight: 200;
@@ -153,13 +155,16 @@ nav .logo em {
         font-size: 24px;
     }
 }
+
 footer {
     width: 100%;
     height: 80px;
     background-color: #313131;
-  }
-  
-  footer p {
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
     text-align: center;
     color: #fff;
     font-weight: 200;
@@ -167,21 +172,12 @@ footer {
     text-transform: uppercase;
     padding-top: 33px;
     letter-spacing: 0.5px;
-  }
-  
-  footer a {
-    color: #aaa;
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    text-decoration: none;
-    color: #aaa;
-  }
-  .menu-content {
+}
+
+.menu-content {
     position: absolute;
     right: 0;
-    top: 80px; /* ปรับตามความสูงของ nav ของคุณ */
+    top: 80px;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 4px;
