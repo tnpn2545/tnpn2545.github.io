@@ -388,4 +388,45 @@ footer a:hover {
         margin-top: 80px;
     }
 }
+@media screen and (max-width: 768px) {
+    nav {
+        height: 60px; /* ลดความสูงของแถบนำทาง */
+    }
 
+    nav .logo a {
+        font-size: 24px; /* ลดขนาดตัวอักษรของโลโก้ */
+        line-height: 60px;
+    }
+
+    .menu-icon {
+        width: 30px; /* ลดขนาดไอคอนเมนู */
+        height: 30px;
+    }
+
+    .menu-icon span {
+        width: 20px; /* ลดขนาดของเส้นแสดงเมนู */
+    }
+
+    .menu-content {
+        width: 160px; /* ปรับขนาดของเมนูเมื่อเปิด */
+    }
+
+    .game-container {
+        padding: 20px; /* เพิ่มช่องว่างรอบขอบ */
+        margin-top: 60px; /* ลดระยะห่างระหว่างแถบนำทางและเนื้อหา */
+    }
+
+    .game-container h1 {
+        font-size: 24px; /* ลดขนาดตัวอักษรของหัวข้อ */
+        transform: translate(-50%, 200%); /* ปรับตำแหน่งหัวข้อ */
+    }
+
+    footer {
+        height: 60px; /* ลดความสูงของท้ายเพจ */
+        margin-top: 20px; /* เพิ่มระยะห่างระหว่างเนื้อหาและท้ายเพจ */
+    }
+
+    footer p {
+        padding-top: 23px; /* ปรับตำแหน่งข้อความในท้ายเพจ */
+    }
+}
