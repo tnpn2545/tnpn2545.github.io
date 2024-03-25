@@ -13,21 +13,21 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="index.html" title="Go to Game Homepage">Game<em>page</em></a>
+            <a href="index.html">Game<em>page</em></a>
         </div>
-        <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle Menu">
-            <span aria-hidden="true"></span>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
         </div>
-        <div class="menu-content" id="menuContent" aria-label="Main Menu">
+        <div class="menu-content" id="menuContent">
             <table>
                 <tr>
-                    <td><a href="index.html" title="Go to Homepage">Homepage</a></td>
+                    <td><a href="index.html">Homepage</a></td>
                 </tr>
                 <tr>
-                    <td><a href="game.html" title="Stay on Game Page">Game</a></td>
+                    <td><a href="game.html">Game</a></td>
                 </tr>
                 <tr>
-                    <td><a href="profile.html" title="Go to About Us Page">About Us</a></td>
+                    <td><a href="profile.html">About Us</a></td>
                 </tr>
             </table>
         </div>
@@ -35,34 +35,35 @@
     <div class="game-container">
         <h1>Typing Speed Test Game</h1>
         <div class="wrapper">
-            <input type="text" class="input-field" aria-label="Type the displayed text here">
+            <input type="text" class="input-field" id="inputField">
+            <label for="inputField">Type Here</label> <!-- เพิ่ม label สำหรับ input field -->
             <div class="content-box">
-              <div class="typing-text" aria-live="polite" aria-atomic="true">
-                <p></p>
-              </div>
-              <div class="content">
-                <ul class="result-details">
-                  <li class="time">
-                    <p>Time Left:</p>
-                    <span aria-live="polite"><b>60</b>s</span>
-                  </li>
-                  <li class="mistake">
-                    <p>Mistakes:</p>
-                    <span aria-live="polite">0</span>
-                  </li>
-                  <li class="wpm">
-                    <p>WPM:</p>
-                    <span aria-live="polite">0</span>
-                  </li>
-                  <li class="cpm">
-                    <p>CPM:</p>
-                    <span aria-live="polite">0</span>
-                  </li>
-                </ul>
-                <button aria-label="Start a new game">Try Again</button>
-              </div>
+                <div class="typing-text">
+                    <p></p>
+                </div>
+                <div class="content">
+                    <ul class="result-details">
+                        <li class="time">
+                            <p>Time Left:</p>
+                            <span><b>60</b>s</span>
+                        </li>
+                        <li class="mistake">
+                            <p>Mistakes:</p>
+                            <span>0</span>
+                        </li>
+                        <li class="wpm">
+                            <p>WPM:</p>
+                            <span>0</span>
+                        </li>
+                        <li class="cpm">
+                            <p>CPM:</p>
+                            <span>0</span>
+                        </li>
+                    </ul>
+                    <button aria-label="Try Again">Try Again</button> 
+                </div>
             </div>
-          </div>
+        </div>
     </div>
     <footer>
         <p>Create By Thani Paknam</p>

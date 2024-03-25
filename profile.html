@@ -12,21 +12,21 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="index.html" title="Go to Homepage">Profile<em>page</em></a>
+            <a href="index.html">Profile<em>page</em></a>
         </div>
-        <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle Menu">
-            <span aria-hidden="true"></span>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
         </div>
-        <div class="menu-content" id="menuContent" aria-label="Main Menu">
+        <div class="menu-content" id="menuContent">
             <table>
                 <tr>
-                    <td><a href="index.html" title="Go to Homepage">Homepage</a></td>
+                    <td><a href="index.html">Homepage</a></td>
                 </tr>
                 <tr>
-                    <td><a href="game.html" title="Go to Game Page">Game</a></td>
+                    <td><a href="game.html">Game</a></td>
                 </tr>
                 <tr>
-                    <td><a href="profile.html" title="Go to About Us Page">About Us</a></td>
+                    <td><a href="profile.html">About Us</a></td>
                 </tr>
             </table>
         </div>
@@ -44,15 +44,24 @@
                 <div class="profile-info">
                     <p><strong>Name:</strong> Thani Paknam</p>
                     <p><strong>Age:</strong> 21</p>
-                    <p><strong>Email:</strong> <a href="mailto:thanipaknam@gmail.com" title="Send email to thanipaknam@gmail.com">thanipaknam@gmail.com</a></p>
+                    <p><strong>Email:</strong> thanipaknam@gmail.com</p>
                     <p><strong>Education:</strong> KMITL</p>
                     <p><strong>Skill:</strong> Html Css Javascript Godot Engine</p>
                     <p><strong>Location:</strong> Sattahip Chonburi Thailand</p>
                 </div>
                 <div class="social-media">
-                    <a href="https://www.instagram.com/thani.pn/" title="Visit Thani's Instagram"><img src="imageorvideo/instagram.png" alt="Instagram Icon"></a>
-                    <a href="https://web.facebook.com/thani.paknam/" title="Visit Thani's Facebook"><img src="imageorvideo/facebook.png" alt="Facebook Icon"></a>
-                    <a href="https://github.com/tnpn2545" title="Visit Thani's GitHub"><img src="imageorvideo/github.png" alt="GitHub Icon"></a>
+                    <label for="instagram-link">Instagram</label>
+                    <a id="instagram-link" href="https://www.instagram.com/thani.pn/">
+                        <img src="imageorvideo/instagram.png" alt="Instagram Icon" role="link" aria-label="Instagram">
+                    </a>
+                    <label for="facebook-link">Facebook</label>
+                    <a id="facebook-link" href="https://web.facebook.com/thani.paknam/">
+                        <img src="imageorvideo/facebook.png" alt="Facebook Icon" role="link" aria-label="Facebook">
+                    </a>
+                    <label for="github-link">GitHub</label>
+                    <a id="github-link" href="https://github.com/tnpn2545">
+                        <img src="imageorvideo/github.png" alt="GitHub Icon" role="link" aria-label="GitHub">
+                    </a>
                 </div>
             </div>
         </div>

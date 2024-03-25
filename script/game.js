@@ -66,6 +66,11 @@ function initTyping() {
     } else {
         clearInterval(timer);
         inpField.value = "";
+        if (charIndex >= characters.length - 1 && mistakes <= 5) {
+            window.alert("Good job !!");
+        } else {
+            window.alert("Practice for more points.");
+        }
     }
 }
 
@@ -77,6 +82,7 @@ function initTimer() {
         wpmTag.innerText = wpm;
     } else {
         clearInterval(timer);
+        window.alert("Time out!");
     }
 }
 
