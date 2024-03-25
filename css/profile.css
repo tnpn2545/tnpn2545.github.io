@@ -13,7 +13,7 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background-color: #4237ba;
+    background-color: #e66d10;
 }
 
 nav {
@@ -203,7 +203,7 @@ footer {
     width: 100%;
     height: 80px;
     background-color: #313131;
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 
@@ -228,14 +228,26 @@ footer a:hover {
 }
 @media screen and (max-width: 480px) {
     .profile-content {
-        flex-direction: column; /* เปลี่ยนเรียงลงให้เป็นแนวตั้งและเอารูปไว้ด้านบน */
+        flex-direction: column;
         align-items: center;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .profile-heading h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .profile-info p {
+        font-size: 20px;
+        margin-bottom: 8px;
     }
 
     .profile-image {
         width: 150px;
         height: 225px;
-        order: -1; /* ให้รูปอยู่ด้านบน */
+        order: -1;
     }
 
     .social-media {
@@ -248,5 +260,9 @@ footer a:hover {
         width: 25px;
         height: 25px;
         margin: 0 5px;
+    }
+    footer {
+        position: static;
+        margin-top: 80px;
     }
 }
